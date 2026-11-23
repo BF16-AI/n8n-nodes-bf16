@@ -1,0 +1,50 @@
+{
+  "name": "n8n-nodes-bf16",
+  "version": "0.1.0",
+  "description": "n8n community node for bf16.ai — 1M-context uncensored LLM APIs (DeepSeek V4.1 Flash, GLM-5.3, Kimi K3.1 Pro) with prompt caching and strict Zero Data Retention",
+  "keywords": [
+    "n8n-community-node-package",
+    "n8n",
+    "bf16",
+    "llm",
+    "ai",
+    "deepseek",
+    "glm",
+    "kimi",
+    "openai-compatible"
+  ],
+  "license": "MIT",
+  "homepage": "https://bf16.ai",
+  "author": {
+    "name": "BF16 Team",
+    "email": "hello@bf16.ai",
+    "url": "https://bf16.ai"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BF16-AI/n8n-nodes-bf16.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && cp nodes/Bf16/bf16.svg dist/nodes/Bf16/bf16.svg",
+    "typecheck": "tsc --noEmit"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/Bf16Api.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/Bf16/Bf16.node.js"
+    ]
+  },
+  "devDependencies": {
+    "n8n-workflow": "^1.82.0",
+    "typescript": "^5.7.0"
+  }
+}
