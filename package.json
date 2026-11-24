@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/BF16-AI/n8n-nodes-bf16.git"
+    "url": "git+https://github.com/BF16-AI/n8n-nodes-bf16.git"
   },
   "main": "index.js",
   "scripts": {
